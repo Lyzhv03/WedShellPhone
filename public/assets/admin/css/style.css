@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  transition: all 0.2s linear;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: aqua;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.heading {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.quanly {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.quanly li {
+  list-style: none;
+}
+
+.quanly li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: blue;
+}
+
+.quanly li:first-child a {
+  background-color: lightcoral;
+}
+
+.quanly li:nth-child(2) a {
+  background-color: rgb(19, 168, 19);
+}
+
+.quanly li:nth-child(3) a {
+  background-color: rgb(131, 131, 15);
+}
+
+.quanly li:nth-child(5) a {
+  background-color: rgb(167, 60, 18);
+}
+
+.quanly li:last-child a {
+  background-color: lightslategrey;
+}
+
+.quanly li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.background {
+  min-height: 100vh;
+  background-color: grey;
+}
+
+.danhmuc {
+  max-width: 350px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.danhmuc form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  background-color: aqua;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.danhmuc form label h4 {
+  margin-bottom: 10px;
+}
+
+.danhmuc form label input {
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.add input,
+.add a {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.add a {
+  text-decoration: none;
+  background-color: bisque;
+}
+
+.listloaihang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.listloaihang h2 {
+  margin: 2rem 0;
+}
+
+.listloaihang table {
+  background-color: #2c2c54;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.listloaihang table tbody tr td img {
+  max-width: 100px;
+}
+
+.listloaihang table thead th:not(.listloaihang table thead th:first-child) {
+  background-color: lightslategray;
+  border: 1px solid transparent;
+}
+
+.boxProduct {
+  width: 100%;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+.sua,
+.xoa {
+  text-decoration: none;
+  padding: 5px 20px;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.sua {
+  background-color: rgb(15, 192, 15);
+  color: black;
+}
+
+.xoa {
+  background-color: tomato;
+}
+
+.btn input,
+.btn button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.addProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.addProduct .formProduct {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+.formProduct label h4,
+.formClient label h4 {
+  margin-bottom: 10px;
+}
+
+.formProduct label input,
+.formClient label input {
+  outline: none;
+  padding: 5px;
+}
+
+.formClient label input:not(input[type="radio"]) {
+  width: 100%;
+}
+
+.formProduct label .border {
+  border: 1px solid gray;
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.btn a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: chocolate;
+  color: wheat;
+  border: 1px solid chocolate;
+  border-radius: 4px;
+}
+
+.addClient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.formClient {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.formClient label .border {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.formClient label .border label:first-child {
+  margin-right: 10px;
+}
+
+.addClient form .btn {
+  margin-top: 10px;
+}
+
+#loaihang {
+  width: 183px;
+  outline: none;
+  padding: 5px;
+}
+
+.err {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bannerquanly {
+  text-align: center;
+}
+
+.bannerquanly img {
+  max-width: 350px;
+}
+
+.headerAD {
+  text-decoration: none;
+}
+
+.headerAD:hover {
+  color: lightseagreen;
+}
+
+.fa-solid {
+  color: black;
+  display: block;
+  text-align: right;
+}
+
+.cthoadon {
+  padding: 5px 30px;
+  text-decoration: none;
+  background-color: #27ae60;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+}
+
+.listloaihang form table {
+  margin-bottom: 10px;
+}
